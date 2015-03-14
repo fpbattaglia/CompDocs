@@ -51,4 +51,6 @@ patron.science.ru.nl. For the cluster, you need a separate account that you need
 	* EPD python in /peones/peon001/battaglia/epd-7.3-1-rh5-x86_64/bin
 	* KlustaKwik in /peones/peon001/battaglia/bin
 	* git in /peones/peon001/battaglia/bin
+	* Anaconda python in /peones/peon001/battaglia/anaconda/bin/python
 	
+	you can add these to the PATH to use them 
