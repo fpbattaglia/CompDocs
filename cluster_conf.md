@@ -30,7 +30,7 @@ patron.science.ru.nl. For the cluster, you need a separate account that you need
 > TERM=vt100 mosh your_science_username@lilo.science.ru.nl 
 
    To avoid you some typing you can add an alias to your bash shell: just say
-> cat "alias slilo='TERM=vt100 mosh your_science_username@lilo.science.ru.nl'" >> ~/.profile
+> echo "alias slilo='TERM=vt100 mosh your_science_username@lilo.science.ru.nl'" >> ~/.profile
 
    from your computer terminal. Then say 
 > . ~/.profile
@@ -46,3 +46,9 @@ patron.science.ru.nl. For the cluster, you need a separate account that you need
    you are now in the cluster. 
    
 * Even if you are inside the Science network, this method is still beneficial, as the combination of mosh and byobu will keep the state of your session, so that you can interrupt work and resume it from where you left it. 
+
+* I have added to patron some code that may be of interest: 
+	* EPD python in /peones/peon001/battaglia/epd-7.3-1-rh5-x86_64/bin
+	* KlustaKwik in /peones/peon001/battaglia/bin
+	* git in /peones/peon001/battaglia/bin
+	
