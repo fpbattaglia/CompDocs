@@ -47,10 +47,18 @@ patron.science.ru.nl. For the cluster, you need a separate account that you need
    
 * Even if you are inside the Science network, this method is still beneficial, as the combination of mosh and byobu will keep the state of your session, so that you can interrupt work and resume it from where you left it. 
 
-* I have added to patron some code that may be of interest: 
-	* EPD python in /peones/peon001/battaglia/epd-7.3-1-rh5-x86_64/bin
-	* KlustaKwik in /peones/peon001/battaglia/bin
-	* git in /peones/peon001/battaglia/bin
-	* Anaconda python in /peones/peon001/battaglia/anaconda/bin/python
+* ~~I have added to patron some code that may be of interest:~~
+
+	~~* EPD python in /peones/peon001/battaglia/epd-7.3-1-rh5-x86_64/bin~~
+	~~* KlustaKwik in /peones/peon001/battaglia/bin~~
+	~~* git in /peones/peon001/battaglia/bin~~
+	~~* Anaconda python in /peones/peon001/battaglia/anaconda/bin/python~~
+
+* I updated the code on the cluster, for several reasons, first, the /peones disks get wides and so it's not reliable to store software there, second, in the meantime the London group moved to phy, third, the OS on the cluster is ancient, so the binaries from klustateam won't work, and I had to recompile them, fourth, I don't think it makes sense to use EPD python any more as phy uses anaconda, which is much simpler and better behaved. Therefore, now I have 
+	* anaconda3 in /home/battaglia/anaconda3 (add /home/battaglia/anaconda3/bin to PATH to use)
+	* git in /home/battaglia/git
+	* phy is installed in the anaconda distribution so it will be also available in /home/battaglia/anaconda3/bin 
+	
+	
 	
 	you can add these to the PATH to use them 
